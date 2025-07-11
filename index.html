@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+
+        <!-- Search container -->
+        <div class="input-container">
+            <input type="text" id="city-input" placeholder="Enter city name...">
+            <button id="get-weather-btn" class="btn">Get Weather
+            </button>
+        </div>
+
+          <!--- loading screen container -->
+            <div class="sub-container loading-container">
+                <img src="./images/loading.gif" width="150" height="150">
+                <p>Loading</p>
+            </div>
+
+            <!-- Display weather info -->
+             <div class="sub-container weather-info">
+
+                <!-- city name and flag -->
+                 <div class="name">
+                    <p id="city-name"></p>
+                    <img id="city-icon">
+                 </div>
+
+                <!-- weather description -->
+                 <p id="weather-desc"></p>
+                <!-- weather Icon -->
+                 <img id="weather-icon" alt="Weather Icon" />
+                 <!-- temperature -->
+                  <p id="temperature"></p>
+
+                <!-- 3 parameters -->
+
+                <div class="parameter-container">
+
+                   <div class="parameter">
+                    <img src="./images/wind.png" >
+                    <p>Windspeed</p>
+                    <p id="windspeed"></p>
+                   </div>
+
+                    <div class="parameter">
+                    <img src="./images/humidity.png" >
+                    <p>Humidity</p>
+                    <p id="humidity"></p>
+                   </div>
+
+                    <div class="parameter">
+                    <img src="./images/cloud.png" >
+                    <p>Clouds</p>
+                    <p id="Clouds"></p>
+                   </div>
+
+                </div>
+
+             </div>
+             <p id="error-message">City not found! please try again.</p>
+
+         </div>    
+         
+    <script src="script.js"></script>
+</body>
+</html>
